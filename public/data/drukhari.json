@@ -1,0 +1,112 @@
+{
+  "faction": "Drukhari",
+  "subfactions": ["Kabal", "Wych Cult", "Haemonculus Coven"],
+  "detachments": [
+    {
+      "name": "Realspace Raid",
+      "required": {
+        "HQ": 1,
+        "Troops": 2
+      },
+      "max": {
+        "Elites": 3,
+        "Fast Attack": 3,
+        "Heavy Support": 2,
+        "Flyer": 1
+      },
+      "specialRules": [
+        "You can include one Archon, one Succubus, and one Haemonculus in the same detachment without breaking faction rules.",
+        "These HQs must each lead a unit of their respective subfaction (Kabalite Warriors, Wyches, Wracks).",
+        "All units gain the 'Power From Pain' ability, enhancing their strength as the battle progresses."
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "kabalite-warriors",
+      "name": "Kabalite Warriors",
+      "role": "Troops",
+      "points": 65,
+      "minSize": 5,
+      "maxSize": 10,
+      "keywords": ["Drukhari", "Kabal", "Infantry", "Core"],
+      "upgrades": [
+        {
+          "name": "Blaster",
+          "cost": 5,
+          "type": "Weapon",
+          "constraints": ["one per 10 models"]
+        },
+        {
+          "name": "Dark Lance",
+          "cost": 10,
+          "type": "Weapon",
+          "constraints": ["one per 10 models"]
+        }
+      ],
+      "factionLocked": ["Kabal"]
+    },
+    {
+      "id": "archon",
+      "name": "Archon",
+      "role": "HQ",
+      "points": 75,
+      "minSize": 1,
+      "maxSize": 1,
+      "keywords": ["Drukhari", "Kabal", "Character", "Infantry", "Leader"],
+      "upgrades": [],
+      "factionLocked": ["Kabal"]
+    },
+    {
+      "id": "succubus",
+      "name": "Succubus",
+      "role": "HQ",
+      "points": 70,
+      "minSize": 1,
+      "maxSize": 1,
+      "keywords": ["Drukhari", "Wych Cult", "Character", "Infantry", "Leader"],
+      "upgrades": [],
+      "factionLocked": ["Wych Cult"]
+    },
+    {
+      "id": "lelith-hesperax",
+      "name": "Lelith Hesperax",
+      "role": "HQ",
+      "points": 85,
+      "minSize": 1,
+      "maxSize": 1,
+      "keywords": ["Drukhari", "Wych Cult", "Character", "Infantry", "Epic Hero", "Leader"],
+      "upgrades": [],
+      "factionLocked": ["Wych Cult"]
+    },
+    {
+      "id": "wracks",
+      "name": "Wracks",
+      "role": "Troops",
+      "points": 70,
+      "minSize": 5,
+      "maxSize": 10,
+      "keywords": ["Drukhari", "Haemonculus Coven", "Infantry", "Core"],
+      "upgrades": [
+        {
+          "name": "Liquifier Gun",
+          "cost": 5,
+          "type": "Weapon",
+          "constraints": ["one per 5 models"]
+        }
+      ],
+      "factionLocked": ["Haemonculus Coven"]
+    },
+    {
+      "id": "urien-rakarth",
+      "name": "Urien Rakarth",
+      "role": "HQ",
+      "points": 95,
+      "minSize": 1,
+      "maxSize": 1,
+      "keywords": ["Drukhari", "Haemonculus Coven", "Character", "Infantry", "Epic Hero", "Leader"],
+      "upgrades": [],
+      "factionLocked": ["Haemonculus Coven"]
+    }
+  ]
+}
